@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+//Building TicTacToe
+<html>
+    <head>
+	    <!--metadata goes here -->
+        <title>Zhenwen's Arcade-19: Tic Tac Toe</title>
+        <link rel="stylesheet" type="text/css" href="tictactoe.css">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css" integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+
+        <meta name="description" content="Welcome to Zhenwen's Arcade-19! Time to play Tic Tac Toe.">
+        <meta name="author" content="Zhenwen D. & Kobe T.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!-- Content goes here  -->
+        <div class="top-page">
+            <center>
+                <h1>Tic Tac Toe</h1>
+                <a class="github" target="_blank" href="https://github.com/kotran222/connect4"><i class="fab fa-github"></i></a> 
+                <p>Welcome to Zhenwen's Arcade! Time to play Tic Tac Toe.</p>
+                <p><strong>Instructions: </strong> Take turns entering Xs or Os until you or the computer gets three in a row to win. </p>
+            </center>
+
+        </div>
+
+        <br/>
+
+        <!-- Tic Tac Toe Board -->
+        <div class="container">
+
+            <table>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </table>
+
+            <!-- Who Wins or Lose function -->
+            <div class="endgame">
+                <div class="text"></div>
+                <button onClick="startGame()">Replay</button>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="tictactoe.js"></script>  
+        
+        <footer>&ensp; Backend by Zhenwen D. &ensp; | &ensp; Web Design by Kobe T.</footer>
+    </body>
+</html>
