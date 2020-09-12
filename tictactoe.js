@@ -4,7 +4,6 @@
 
     let gameBoard;
     const humanPlayer = 'X';
-    let humanPlayerScore = 0;
     const computer = 'O';
     const winCombos = [
         [0, 1, 2],
@@ -65,7 +64,7 @@
             document.getElementById(index).style.backgroundColor =
                 gameWon.player == humanPlayer ? "#7cb342" : "#D21404";
         }
-        for (var i = 0; i < cells.length; i++) {
+        for (let i = 0; i < cells.length; i++) {
             cells[i].removeEventListener('click', turnClick, false);
         }
         declareWinner(gameWon.player == humanPlayer ? "You win!" : "You lose.");
@@ -86,7 +85,7 @@
     
     function checkTie() {
         if (emptySquares().length == 0) {
-            for (var i = 0; i < cells.length; i++) {
+            for (let i = 0; i < cells.length; i++) {
                 cells[i].style.backgroundColor = "#B3E5FC";
                 cells[i].removeEventListener('click', turnClick, false);
             }
